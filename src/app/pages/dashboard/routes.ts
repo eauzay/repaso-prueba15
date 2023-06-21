@@ -11,4 +11,8 @@ export default [
     path: 'footer',
     component: FooterComponent,
   },
+  {
+    path: "gallery",
+    loadComponent: () => import("./gallery/gallery.component").then(m => m.GalleryComponent) //ejecute el componente una vez cargada el componente
+  }
 ] as Route[];

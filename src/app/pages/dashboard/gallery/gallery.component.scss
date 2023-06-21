@@ -1,0 +1,11 @@
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.grid div{
+  position: relative;
+  height: 300px;
+}
