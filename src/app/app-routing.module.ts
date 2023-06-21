@@ -3,7 +3,11 @@ import { AppComponent } from './app.component';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'app',
     component: AppComponent
   },
+  {
+    path: "dashboard",
+    loadChildren:() => import ("./pages/dashboard/routes")
+  }
 ];
